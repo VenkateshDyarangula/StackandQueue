@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace UC3_EnQueue
+namespace UC4_DequeueFirst
 {
     class Program
     {
@@ -22,6 +22,9 @@ namespace UC3_EnQueue
             linkedListQueue.Enqueue(56);
             linkedListQueue.Enqueue(30);
             linkedListQueue.Enqueue(70);
+            linkedListQueue.Display();
+            linkedListQueue.Dequeue();
+            Console.WriteLine();
             linkedListQueue.Display();
         }
     }

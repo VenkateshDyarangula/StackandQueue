@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace UC3_EnQueue
+namespace UC4_DequeueFirst
 {
-
     class QueueUsingLinkedList
     {
         Node head = null;
@@ -26,6 +25,17 @@ namespace UC3_EnQueue
             Console.WriteLine("{0} inserted into queue ", node.data);
 
         }
+
+        internal Node Dequeue()
+        {
+            if (this.head == null)
+                return null;
+            this.head = this.head.next;
+            return this.head;
+
+        }
+
+
 
         internal void Display()
         {

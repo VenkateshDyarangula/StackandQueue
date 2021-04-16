@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace UC3_EnQueue
+namespace UC4_DequeueFirst
 {
     class Node
     {
