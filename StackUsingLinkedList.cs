@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace UC1_PuchIntoStack
+namespace UC2_AllMethods_In_Stack
 {
     class StackUsingLinkedList
     {
@@ -19,7 +19,7 @@ namespace UC1_PuchIntoStack
             if (this.top == null)
                 node.next = null;
             else
-                node.next = this.top;//1300
+                node.next = this.top;
             this.top = node;
             Console.WriteLine("{0} pushed to stack ", value);
         }
@@ -29,8 +29,38 @@ namespace UC1_PuchIntoStack
             while (temp != null)
             {
                 Console.Write(temp.data + " ");
-                temp = temp.next;//1400
+                temp = temp.next;
             }
+        }
+        internal void Peek()
+        {
+            if (this.top == null)
+            {
+                Console.WriteLine("Stack is empty");
+                return;
+            }
+            Console.WriteLine("{0} is in the top of the stack ", this.top.data);//NullrefrenceRxception
+        }
+
+        internal void Pop()
+        {
+            if (this.top == null)
+            {
+                Console.WriteLine("Stack is empty, Deletion is not possible");
+                return;
+            }
+            Console.WriteLine("Value popped is {0} ", this.top.data);
+            this.top = this.top.next;
+        }
+
+        internal void IsEmpty()
+        {
+            while (this.top != null)
+            {
+                Peek();
+                Pop();
+            }
+            //this.top=null;
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace UC1_PuchIntoStack
+namespace UC2_AllMethods_In_Stack
 {
     class Program
     {
@@ -11,7 +11,11 @@ namespace UC1_PuchIntoStack
             linkedListStack.Push(30);
             linkedListStack.Push(56);
             linkedListStack.Display();
-
+            Console.WriteLine();
+            linkedListStack.Peek();
+            linkedListStack.Pop();
+            linkedListStack.IsEmpty();
+            linkedListStack.Display();
         }
     }
 }

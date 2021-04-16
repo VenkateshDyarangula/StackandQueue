@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace UC1_PuchIntoStack
-{ 
+namespace UC2_AllMethods_In_Stack
+{
+
     class Node
     {
         public int data;
@@ -12,6 +13,5 @@ namespace UC1_PuchIntoStack
         {
             this.data = data;
         }
-
     }
 }
