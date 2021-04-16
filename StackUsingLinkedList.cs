@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace UC2_AllMethods_In_Stack
+namespace UC3_EnQueue
 {
+
     class StackUsingLinkedList
     {
         private Node top;
